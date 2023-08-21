@@ -108,7 +108,7 @@ span {
     font-size: 1.6rem;
 }
 
-.socialMedia a {
+.socialMedia {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +296,21 @@ span {
     color: var(--second-bg-color);
 }
 
+
+.contact {
+    font-size: 2rem;
+    text-align: center;
+    height: 20rem; 
+    overflow: hidden;
+    transition: height 0.5s ease; 
+}
+
+.contact form,
+.btnFormShow,
+.btnFormHide {
+    margin: 3rem 0;
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -337,6 +352,18 @@ span {
     margin-top: 2rem;
 }
 
+.btnCtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#btnFormHide {
+    background-color: rgb(253, 23, 23);
+    color: #fff;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -344,6 +371,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem;
     background: var(--second-bg-color);
+    position: relative;
 }
 
 .footerText {
@@ -358,6 +386,10 @@ span {
     background: var(--main-color);
     border-radius: 1rem;
     transition: .5s ease;
+    position: fixed;
+    z-index: 100;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 .footerIconTop:hover {

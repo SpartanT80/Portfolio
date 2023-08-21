@@ -4,6 +4,10 @@ let navbar = document.querySelector('.navbar');
 let readMoreBtn = document.querySelector('.btnReadMore');
 let readLessBtn = document.querySelector('.btnReadLess');
 let aboutReadMore = document.querySelector('.aboutReadMore');
+// form read/hide
+let formReadMore = document.querySelector('.formReadMore');
+let readForm = document.querySelector('.btnFormShow');
+let hideForm = document.querySelector('#btnFormHide');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-x');
@@ -19,6 +23,20 @@ readLessBtn.onclick = () => {
     readMoreBtn.classList.remove('displayNone');
     readLessBtn.classList.add('displayNone');
     aboutReadMore.classList.add('displayNone');
+}
+
+readForm.onclick = () => {
+    formReadMore.classList.remove('displayNone');
+    hideForm.classList.remove('displayNone');
+    readForm.classList.add('displayNone');
+    document.querySelector('.contact').style.height = 'auto';
+}
+
+hideForm.onclick = () => {
+    formReadMore.classList.add('displayNone');
+    hideForm.classList.add('displayNone');
+    readForm.classList.remove('displayNone');
+    document.querySelector('.contact').style.height = '20rem'; // Set to the initial height
 }
 
 // =========================>>>  scroll sections active link 

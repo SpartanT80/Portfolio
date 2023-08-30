@@ -44,10 +44,6 @@ section {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
-/* .header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
-} */
-
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -178,45 +174,41 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.capabilities {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
 .capabilities h2 {
-    margin-bottom: 5rem;
+    margin-top: 0;
 }
 
 .capabilitiesCtn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.capabilitiesCtn .capabilitiesBox {
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
+    justify-content: space-between;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+    font-size: 3rem;
+    gap: 2rem;
+    margin-top: 10%;
 }
 
-.capabilitiesCtn .capabilitiesBox:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
+.capabilities figure {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
 }
 
-.capabilitiesBox i {
-    font-size: 7rem;
-    color: var(--main-color);
+.capabilities img {
+    width: 100%;
+    margin: 2%;
 }
 
-.capabilitiesBox h3 {
-    font-size: 2.5rem;
-}
+.capabilities figcaption {
+    height: fit-content;
 
-.capabilitiesBox p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
 }
 
 .portfolio {

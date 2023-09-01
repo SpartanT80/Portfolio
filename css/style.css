@@ -487,6 +487,12 @@ span {
     .capabilities h2 {
         margin-bottom: 3rem;
     }
+    .capabilitiesCtn {
+        flex-wrap: wrap;
+    }
+    .capabilities figure {
+        width: 25%;
+    }
 
     .portfolio h2 {
         margin-bottom: 3rem;
@@ -518,6 +524,10 @@ span {
 
     .aboutImg {
         display: none;
+    }
+
+    .capabilities figure {
+        width: 40%;
     }
 }
 
